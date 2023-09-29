@@ -12,5 +12,6 @@ public class avg {
         int b = sc.nextInt();
         int c = sc.nextInt();
         avgNo(a,b,c);
+        sc.close();
     }
 }
