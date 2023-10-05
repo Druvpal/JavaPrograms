@@ -9,3 +9,5 @@ class userDPackage{
         obj.show();
     }
 }
+// for compile (javac -d . class_name.java)
+// for run (java package_name.class_name)
