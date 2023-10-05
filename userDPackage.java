@@ -1,11 +1,11 @@
 package manish;
-class packagePrivate {
+class userDPackage{
     private void show(){
         System.out.println("My name is Manish Kumar Pal:");
     }
 
     public static void main(String[] args) {
-        packagePrivate obj = new packagePrivate();
+        userDPackage obj = new userDPackage();
         obj.show();
     }
 }
