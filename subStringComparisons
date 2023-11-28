@@ -1,0 +1,28 @@
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.*;
+
+public class subStringComparisons {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int k = sc.nextInt();
+
+        String arr[] = new String[name.length()-k+1];
+
+        String s = "";
+        for(int i=0;i<name.length()-k+1;i++){
+            for(int j=i;j<i+k;j++){
+                s = s + name.charAt(j);
+            }
+            arr[i] = s;
+            s = "";
+        }
+
+        Arrays.sort(arr);
+
+        System.out.println(arr[0]);
+        System.out.println(arr[name.length()-k]);
+
+    }
+}
